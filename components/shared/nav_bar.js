@@ -6,6 +6,7 @@ export function create_nav_bar() {
     hasUser: false,
     hasSettings: true,
     hasTheme: true,
+    hasLocale: true
   };
 
   const containers = createContainers();
@@ -34,10 +35,10 @@ export function create_nav_bar() {
 
   function createLinks() {
     return [
-      { label: "Gallery", href: "views/gallery_page.html" },
-      { label: "Reader", href: "views/reader_page.html" },
-      { label: "Table", href: "views/table_page.html" },
-      { label: "Statistics", href: "views/statistics_page.html" }
+      { label: "Gallery", href: "#gallery" },
+      { label: "Reader", href: "#reader" },
+      { label: "Table", href: "#table" },
+      { label: "Statistics", href: "#statistics" }
     ];
   }
 
