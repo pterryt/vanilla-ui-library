@@ -1,11 +1,7 @@
 export const ICONS = {
+  home: "/assets/icons/house.svg",
   user: "/assets/icons/circle-user-round.svg",
   settings: "/assets/icons/settings.svg",
   theme: "/assets/icons/palette.svg",
-};
-
-
-export const VIEWS = {
-  home: "/views/home",
-  settings: "/views/settings",
+  locale: "/assets/icons/globe.svg"
 };

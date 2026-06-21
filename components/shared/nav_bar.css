@@ -18,8 +18,15 @@
 }
 
 .c-nav-bar-right-container {
+  gap: .2rem;
   display: flex;
   justify-content: flex-end;
+  padding: .2rem;
+}
+
+.c-nav-bar-left-container {
+  display: flex;
+  justify-content: flex-start;
   padding: .2rem;
 }
 

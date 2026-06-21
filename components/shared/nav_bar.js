@@ -59,10 +59,21 @@ export function create_nav_bar() {
   }
 
   function render_menu_buttons() {
+    if (state.has_home) {
+      render_home_button()
+    }
+    if (state.has_theme) {
+      render_theme_button()
+    }
+    if (state.has_locale) {
+      render_locale_button()
+    }
+    if (state.has_user) {
+      render_user_button()
+    }
     if (state.has_settings) {
       render_settings_button()
     }
-
   }
 
   function render_settings_button() {
@@ -72,6 +83,21 @@ export function create_nav_bar() {
 
   function render_home_button() {
     const home_button = create_home_button()
-    containers.right.appendChild(home_button);
+    containers.left.appendChild(home_button);
+  }
+
+  function render_locale_button() {
+    const locale_button = create_locale_button()
+    containers.right.appendChild(locale_button);
+  }
+
+  function render_theme_button() {
+    const theme_button = create_theme_button()
+    containers.right.appendChild(theme_button);
+  }
+
+  function render_user_button() {
+    const user_button = create_user_button()
+    containers.right.appendChild(user_button);
   }
 }
