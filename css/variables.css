@@ -1,0 +1,27 @@
+:root {
+  --bg: white;
+  --text: black;
+
+  --font-small: 12px;
+  --font-normal: 16px;
+  --font-large: 24px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+
+  --font-ui: Inter;
+  --font-reading: Source Serif 4;
+  --font-code: JetBrains Mono;
+}
+
+[data-theme="dark"] {
+  --bg: #222;
+  --text: #eee;
+}
+
+[data-locale='ja'] {
+  --font-ui: "Noto Sans JP";
+  --font-reading: "Noto Serif JP";
+  --font-code: JetBrains Mono;
+}

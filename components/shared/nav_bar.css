@@ -1,0 +1,6 @@
+.c-nav-bar {
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
