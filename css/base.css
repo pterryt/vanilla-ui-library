@@ -2,12 +2,30 @@
 body {
   background: var(--bg);
   color: var(--text);
-  display: flex;
-  flex-direction: row;
+}
+
+
+#app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#main-div {
+  overflow: auto;
 }
 
 /* STYLE */
 
 body {
-  border: .2rem solid red;
+  /*border: .2rem solid red;*/
 }
+
+#main-div div, h1 {
+  background-color: beige;
+}
+
+#main-div {
+  background-color: beige;
+}
+

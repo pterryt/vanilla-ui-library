@@ -1,14 +1,26 @@
+@import "./menu_icon_button.css";
+
 /*----------------------------------------*/
               /* Layout */
 /*----------------------------------------*/
+
 .c-nav-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   width: 100vw;
-  z-index: 100;
+  box-sizing: border-box;
 }
 
 .c-nav-bar-center-container {
   display: flex;
   justify-content: center;
+}
+
+.c-nav-bar-right-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: .2rem;
 }
 
 .c-nav-bar-link {
@@ -21,8 +33,11 @@
 /*----------------------------------------*/
                 /* Style */
 /*----------------------------------------*/
+
 .c-nav-bar {
-  border: .2rem solid #007bff;
+  /*border: .2rem solid #007bff;*/
+  /* light blue*/
+  background-color: #e6f7ff;
 }
 
 .c-nav-bar-center-container {
