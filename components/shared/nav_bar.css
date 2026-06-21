@@ -1,6 +1,41 @@
+/*----------------------------------------*/
+              /* Layout */
+/*----------------------------------------*/
 .c-nav-bar {
-  gap: 1rem;
+  width: 100vw;
+  z-index: 100;
+}
+
+.c-nav-bar-center-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+}
+
+.c-nav-bar-link {
+  padding: 0.5rem;
+}
+
+.c-nav-bar-link:hover {
+  box-sizing: border-box;
+}
+/*----------------------------------------*/
+                /* Style */
+/*----------------------------------------*/
+.c-nav-bar {
+  border: .2rem solid #007bff;
+}
+
+.c-nav-bar-center-container {
+}
+
+.c-nav-bar-link {
+  text-decoration: none;
+  color: inherit;
+  border: .2rem solid transparent;
+}
+
+
+.c-nav-bar-link:hover {
+  color: #007bff;
+  border-color: #007bff;
 }

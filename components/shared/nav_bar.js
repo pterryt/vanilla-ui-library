@@ -1,53 +1,54 @@
-export class CNavBar extends HTMLElement {
-  constructor() {
-    super();
-    this.element = document.createElement('nav');
-    this.element.classList.add('c-nav-bar');
+export function create_nav_bar() {
+  const nav = document.createElement('nav');
+  nav.classList.add('c-nav-bar');
 
-    const containers = this.init_containers();
-    this.left_container = containers[0];
-    this.center_container = containers[1];
-    this.right_container = containers[2];
+  const state = {
+    hasUser: false,
+    hasSettings: true,
+    hasTheme: true,
+  };
 
-    this.has_user = false;
-    this.has_settings = true;
+  const containers = createContainers();
+  const links = createLinks();
+
+  renderLinks(containers.center);
+
+  return nav;
+
+  // ---------- internal helpers ----------
+
+  function createContainers() {
+    const left = document.createElement('div');
+    left.className = 'c-nav-bar-left-container';
+
+    const center = document.createElement('div');
+    center.className = 'c-nav-bar-center-container';
+
+    const right = document.createElement('div');
+    right.className = 'c-nav-bar-right-container';
+
+    nav.append(left, center, right);
+
+    return { left, center, right };
   }
 
-  init_containers = () => {
-
-    const left_container = document.createElement('div');
-    left_container.classList.add('c-nav-bar-left-container');
-    this.element.appendChild(left_container);
-
-    const center_container = document.createElement('div');
-    center_container.classList.add('c-nav-bar-center-container');
-    this.element.appendChild(center_container);
-
-    const right_container = document.createElement('div');
-    right_container.classList.add('c-nav-bar-right-container');
-    this.element.appendChild(right_container);
-
-    return [left_container, center_container, right_container]
+  function createLinks() {
+    return [
+      { label: "Gallery", href: "views/gallery_page.html" },
+      { label: "Reader", href: "views/reader_page.html" },
+      { label: "Table", href: "views/table_page.html" },
+      { label: "Statistics", href: "views/statistics_page.html" }
+    ];
   }
 
-  create() {
-    this.element.classList.add('c-nav-bar');
+  function renderLinks(centerContainer) {
+    for (const link of links) {
+      const a = document.createElement('a');
+      a.className = 'c-nav-bar-link';
+      a.textContent = link.label;
+      a.href = link.href;
 
-    const links = [
-
-      {label: "Gallery", href: "gallery_page.html"},
-      {label: "Reader", href: "reader_page.html"},
-      {label: "Table", href: "table_page.html"},
-      {label: "Statistics", href: "statistics_page.html"}
-    ]
-
-    links.forEach(link => {
-      const linkElement = document.createElement('a');
-      linkElement.classList.add('c-nav-bar-link');
-      linkElement.textContent = link.label;
-      linkElement.href = link.href;
-      this.center_container.appendChild(linkElement);
-    });
-
+      centerContainer.appendChild(a);
+    }
   }
 }

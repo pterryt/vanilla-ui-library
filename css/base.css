@@ -1,4 +1,13 @@
+/* LAYOUT */
 body {
   background: var(--bg);
   color: var(--text);
+  display: flex;
+  flex-direction: row;
+}
+
+/* STYLE */
+
+body {
+  border: .2rem solid red;
 }
