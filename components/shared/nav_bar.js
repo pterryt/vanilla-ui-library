@@ -1,24 +1,32 @@
+import {
+  create_home_button,
+  create_settings_button,
+  create_locale_button,
+  create_theme_button,
+  create_user_button
+} from "./menu_icon_button.js";
+
 export function create_nav_bar() {
   const nav = document.createElement('nav');
   nav.classList.add('c-nav-bar');
 
   const state = {
-    hasUser: false,
-    hasSettings: true,
-    hasTheme: true,
-    hasLocale: true
+    has_user: false,
+    has_settings: true,
+    has_theme: true,
+    has_locale: true,
+    has_home: true
   };
 
-  const containers = createContainers();
-  const links = createLinks();
+  const containers = create_containers();
+  const links = create_links();
 
-  renderLinks(containers.center);
+  render_links(containers.center);
+  render_menu_buttons();
 
   return nav;
 
-  // ---------- internal helpers ----------
-
-  function createContainers() {
+  function create_containers() {
     const left = document.createElement('div');
     left.className = 'c-nav-bar-left-container';
 
@@ -30,19 +38,16 @@ export function create_nav_bar() {
 
     nav.append(left, center, right);
 
-    return { left, center, right };
+    return {left, center, right};
   }
 
-  function createLinks() {
-    return [
-      { label: "Gallery", href: "#gallery" },
-      { label: "Reader", href: "#reader" },
-      { label: "Table", href: "#table" },
-      { label: "Statistics", href: "#statistics" }
-    ];
+  function create_links() {
+    return [{label: "Gallery", href: "#gallery"},
+      {label: "Reader", href: "#reader"}, {label: "Table", href: "#table"},
+      {label: "Statistics", href: "#statistics"}];
   }
 
-  function renderLinks(centerContainer) {
+  function render_links(centerContainer) {
     for (const link of links) {
       const a = document.createElement('a');
       a.className = 'c-nav-bar-link';
@@ -51,5 +56,22 @@ export function create_nav_bar() {
 
       centerContainer.appendChild(a);
     }
+  }
+
+  function render_menu_buttons() {
+    if (state.has_settings) {
+      render_settings_button()
+    }
+
+  }
+
+  function render_settings_button() {
+    const setting_button = create_settings_button()
+    containers.right.appendChild(setting_button);
+  }
+
+  function render_home_button() {
+    const home_button = create_home_button()
+    containers.right.appendChild(home_button);
   }
 }
