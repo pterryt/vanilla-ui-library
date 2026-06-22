@@ -1,6 +1,8 @@
-const arr = [10, 10];
-
-const [a, b = 99] = arr;
-
-console.log(a);
-console.log(b);
+function createButtons() {
+  for (var i = 0; i < 3; i++) {
+    setTimeout(function() {
+      console.log(i);
+    }, 1000);
+  }
+}
+createButtons(); // Logs: 3, 3, 3
