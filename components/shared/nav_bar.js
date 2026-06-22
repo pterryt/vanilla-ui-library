@@ -1,3 +1,4 @@
+import { CDropdownMenu } from "./dropdown_menu.js"
 import {
   create_home_button,
   create_settings_button,
@@ -77,27 +78,28 @@ export function create_nav_bar() {
   }
 
   function render_settings_button() {
-    const setting_button = create_settings_button()
+    const setting_button = create_settings_button();
     containers.right.appendChild(setting_button);
   }
 
   function render_home_button() {
-    const home_button = create_home_button()
+    const home_button = create_home_button();
     containers.left.appendChild(home_button);
   }
 
   function render_locale_button() {
-    const locale_button = create_locale_button()
+    const locale_button = create_locale_button();
     containers.right.appendChild(locale_button);
   }
 
   function render_theme_button() {
-    const theme_button = create_theme_button()
-    containers.right.appendChild(theme_button);
+    const theme_button = create_theme_button();
+    const dropdown_menu = new CDropdownMenu(theme_button);
+    containers.right.appendChild(dropdown_menu.element);
   }
 
   function render_user_button() {
-    const user_button = create_user_button()
+    const user_button = create_user_button();
     containers.right.appendChild(user_button);
   }
 }

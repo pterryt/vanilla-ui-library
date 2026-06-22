@@ -1,7 +1,6 @@
 export function settings_view() {
   const view = document.createElement('div');
-  const welcome_message = document.createElement('h1')
-  welcome_message.textContent = 'Settings';
-  view.appendChild(welcome_message);
+  view.classList.add('main-view');
+  view.textContent = 'Settings';
   return view;
 }

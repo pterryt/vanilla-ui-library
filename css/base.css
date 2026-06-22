@@ -4,7 +4,6 @@ body {
   color: var(--text);
 }
 
-
 #app {
   height: 100vh;
   display: grid;
@@ -13,6 +12,9 @@ body {
 
 #main-div {
   overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* STYLE */
@@ -21,11 +23,14 @@ body {
   /*border: .2rem solid red;*/
 }
 
-#main-div div, h1 {
-  background-color: beige;
+.main-view {
+  font-size: 5rem;
 }
+
 
 #main-div {
   background-color: beige;
 }
+
+
 
