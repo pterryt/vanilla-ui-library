@@ -1,8 +1,37 @@
-@import url("variables.css");
-@import url("reset.css");
-@import url("base.css");
+@import "../../css/variables.css";
+/* LAYOUT */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
 
-/* Components*/
-@import url("../components/shared/nav_bar.css");
-@import url("../components/shared/dropdown_menu.css");
+#app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#main-div {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STYLE */
+
+body {
+  /*border: .2rem solid red;*/
+}
+
+.main-view {
+  font-size: 5rem;
+}
+
+
+#main-div {
+  background-color: var(--bg);
+}
+
+
 

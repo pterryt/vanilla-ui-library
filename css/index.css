@@ -1,0 +1,8 @@
+@import url("variables.css");
+@import url("reset.css");
+@import url("main.css");
+
+/* Components*/
+@import url("../components/shared/nav_bar.css");
+@import url("../components/shared/dropdown_menu.css");
+

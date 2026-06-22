@@ -1,4 +1,5 @@
 import { ICONS } from "../../paths.js"
+import { CDropdownMenu } from "./dropdown_menu.js"
 
 export function create_menu_icon_button(svg, label, on_click) {
   const button = document.createElement('button');
