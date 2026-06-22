@@ -1,4 +1,5 @@
 import { CDropdownMenu } from "./dropdown_menu.js"
+import { Theme } from "../../theme.js";
 import {
   create_home_button,
   create_settings_button,
@@ -77,6 +78,7 @@ export function create_nav_bar() {
     }
   }
 
+
   function render_settings_button() {
     const setting_button = create_settings_button();
     containers.right.appendChild(setting_button);
@@ -92,9 +94,26 @@ export function create_nav_bar() {
     containers.right.appendChild(locale_button);
   }
 
+  // TODO: Breakout
   function render_theme_button() {
     const theme_button = create_theme_button();
     const dropdown_menu = new CDropdownMenu(theme_button);
+    const default_button = document.createElement('button');
+    default_button.textContent = 'Default';
+    default_button.addEventListener('click', () => {
+      Theme.setTheme(Theme.THEME.DEFAULT);
+    });
+
+    dropdown_menu.add_menu_item(default_button);
+
+    const dark_button = document.createElement('button');
+    dark_button.textContent = 'Dark Mode';
+    dark_button.addEventListener('click', () => {
+      Theme.setTheme(Theme.THEME.DARK);
+    });
+
+    dropdown_menu.add_menu_item(dark_button);
+
     containers.right.appendChild(dropdown_menu.element);
   }
 

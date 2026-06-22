@@ -1,4 +1,5 @@
 @import "./menu_icon_button.css";
+@import "../../css/variables.css";
 
 /*----------------------------------------*/
               /* Layout */
@@ -44,7 +45,7 @@
 .c-nav-bar {
   /*border: .2rem solid #007bff;*/
   /* light blue*/
-  background-color: #e6f7ff;
+  background-color: var(--nav-bg);
 }
 
 .c-nav-bar-center-container {
