@@ -4,7 +4,7 @@ export const Theme = {
     DEFAULT: 'default', DARK: 'dark'
   },
 
-  setTheme(theme) {
+  set_theme(theme) {
     if (theme === Theme.THEME.default) {
       document.documentElement.removeAttribute('data-theme');
     } else {

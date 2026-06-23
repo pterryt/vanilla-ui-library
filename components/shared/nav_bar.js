@@ -1,5 +1,6 @@
 import { CDropdownMenu } from "./dropdown_menu.js"
 import { Theme } from "../../theme.js";
+import { app_state } from "../../state.js";
 import {
   create_home_button,
   create_settings_button,
@@ -101,7 +102,7 @@ export function create_nav_bar() {
     const default_button = document.createElement('button');
     default_button.textContent = 'Default';
     default_button.addEventListener('click', () => {
-      Theme.setTheme(Theme.THEME.DEFAULT);
+      Theme.set_theme(Theme.THEME.DEFAULT);
     });
 
     dropdown_menu.add_menu_item(default_button);
@@ -109,7 +110,7 @@ export function create_nav_bar() {
     const dark_button = document.createElement('button');
     dark_button.textContent = 'Dark Mode';
     dark_button.addEventListener('click', () => {
-      Theme.setTheme(Theme.THEME.DARK);
+      Theme.set_theme(Theme.THEME.DARK);
     });
 
     dropdown_menu.add_menu_item(dark_button);

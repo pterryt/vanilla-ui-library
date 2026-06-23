@@ -1,5 +1,6 @@
 import { create_nav_bar } from "./components/shared/nav_bar.js";
 import { Router } from "./router.js";
+import { app_state } from "./state.js";
 
 const app = document.getElementById('app');
 const nav_div = document.getElementById('nav-div');

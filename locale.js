@@ -25,6 +25,16 @@ export const locale = {
     }
   },
 
-  t
+  /**
+   * Function that, given a locale code, returns a function that handles
+   * getting localized strings.
+   * @param locale_code
+   * @returns {function(*, *): *}
+   */
+  get_locale(locale_code) {
+    return function l(string_group, string_key) {
+      return locale.STRINGS[locale_code]?.[string_group]?.[string_key] ?? string_key;
+    }
+  }
 
 };
