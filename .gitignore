@@ -1,2 +1,5 @@
 notes.md
 scratch*
+./wasm
+wasm_iframe.html
+serve.json
