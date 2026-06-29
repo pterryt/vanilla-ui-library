@@ -1,5 +1,19 @@
-@import "../../css/variables.css";
-/* LAYOUT */
+@import url("variables.css");
+
+/* Components */
+@import url("components/layout/nav_bar.css");
+@import url("components/shared/dropdown_menu.css");
+
+/*RESET*/
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN LAYOUT */
 body {
   background: var(--bg);
   color: var(--text);
@@ -18,7 +32,7 @@ body {
   justify-content: center;
 }
 
-/* STYLE */
+/* MAIN STYLE */
 
 body {
   /*border: .2rem solid red;*/
@@ -27,7 +41,6 @@ body {
 .main-view {
   font-size: 5rem;
 }
-
 
 #main-div {
   background-color: var(--bg);

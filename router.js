@@ -1,9 +1,9 @@
-import {home_view} from "./views/home.js";
-import {gallery_view} from "./views/gallery.js";
-import {reader_view} from "./views/reader.js";
-import {table_view} from "./views/table.js";
-import {statistics_view} from "./views/statistics.js";
-import {settings_view} from "./views/settings.js";
+import {home_view} from "@layout/home.js";
+import {gallery_view} from "@layout/gallery.js";
+import {reader_view} from "@layout/reader.js";
+import {table_view} from "@layout/table.js";
+import {statistics_view} from "@layout/statistics.js";
+import {settings_view} from "@layout/settings.js";
 
 export class Router {
   constructor(view_root) {
