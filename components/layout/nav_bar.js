@@ -1,19 +1,24 @@
-import { CDropdownMenu } from "./dropdown_menu.js"
-import { Theme } from "../../theme.js";
-import { app_state } from "../../state.js";
+import {CDropdownMenu} from "@components/shared/dropdown_menu.js"
+import {ThemeService} from "@app/theme.js";
+import {Disposable} from "@app/disposable.js"
+
 import {
   create_home_button,
   create_settings_button,
   create_locale_button,
   create_theme_button,
   create_user_button
-} from "./menu_icon_button.js";
+} from "../shared/menu_icon_button.js";
 
-export function create_nav_bar() {
+export function create_nav_bar(app_store) {
+
+  const lifecycle = Disposable.create_disposable_scope();
+  lifecycle.own(app_store.subscribe(s => s.locale, render_links))
+
   const nav = document.createElement('nav');
   nav.classList.add('c-nav-bar');
 
-  const state = {
+  const local_state = {
     has_user: false,
     has_settings: true,
     has_theme: true,
@@ -27,7 +32,9 @@ export function create_nav_bar() {
   render_links(containers.center);
   render_menu_buttons();
 
-  return nav;
+  return {
+    element: nav, dispose: lifecycle.dispose,
+  };
 
   function create_containers() {
     const left = document.createElement('div');
@@ -62,23 +69,22 @@ export function create_nav_bar() {
   }
 
   function render_menu_buttons() {
-    if (state.has_home) {
+    if (local_state.has_home) {
       render_home_button()
     }
-    if (state.has_theme) {
+    if (local_state.has_theme) {
       render_theme_button()
     }
-    if (state.has_locale) {
+    if (local_state.has_locale) {
       render_locale_button()
     }
-    if (state.has_user) {
+    if (local_state.has_user) {
       render_user_button()
     }
-    if (state.has_settings) {
+    if (local_state.has_settings) {
       render_settings_button()
     }
   }
-
 
   function render_settings_button() {
     const setting_button = create_settings_button();
@@ -102,7 +108,9 @@ export function create_nav_bar() {
     const default_button = document.createElement('button');
     default_button.textContent = 'Default';
     default_button.addEventListener('click', () => {
-      Theme.set_theme(Theme.THEME.DEFAULT);
+      app_store.setState({
+        theme: ThemeService.THEME.DEFAULT,
+      });
     });
 
     dropdown_menu.add_menu_item(default_button);
@@ -110,7 +118,9 @@ export function create_nav_bar() {
     const dark_button = document.createElement('button');
     dark_button.textContent = 'Dark Mode';
     dark_button.addEventListener('click', () => {
-      Theme.set_theme(Theme.THEME.DARK);
+      app_store.setState({
+        theme: ThemeService.THEME.DARK,
+      });
     });
 
     dropdown_menu.add_menu_item(dark_button);

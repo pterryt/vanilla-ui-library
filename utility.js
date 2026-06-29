@@ -1,4 +1,4 @@
-export const utilities = {
+export const Utility = {
 
   shallowEqual(a, b) {
     if (Object.is(a, b)) {
