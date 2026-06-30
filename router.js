@@ -6,8 +6,10 @@ import {statistics_view} from "@layout/statistics.js";
 import {settings_view} from "@layout/settings.js";
 
 export class Router {
-  constructor(view_root) {
+  constructor(view_root, app_context) {
     this.view_root = view_root;
+    this.app_context = app_context;
+    this.current = null;
     this.routes = {
       home: home_view,
       reader: reader_view,
@@ -30,7 +32,9 @@ export class Router {
   }
 
   navigate(route) {
-    this.view_root.replaceChildren(this.routes[route]());
+    this.current?.dispose();
+    this.current = this.routes[route](this.app_context);
+    this.view_root.replaceChildren(this.current.view);
   }
 
   handleRoute() {

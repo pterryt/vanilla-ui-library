@@ -1,6 +1,21 @@
-export function statistics_view() {
+import {LocaleService} from "@app/locale.js";
+import {Disposable} from "@app/disposable.js";
+
+export function statistics_view(app_context) {
+
+  const app_store =  app_context.store;
+  const lifecycle = Disposable.create_disposable_scope();
+
+  lifecycle.own(app_store.subscribe( s => s.locale, render ))
+
   const view = document.createElement('div');
   view.classList.add('main-view');
-  view.textContent = 'Statistics';
-  return view;
+
+  render();
+
+  return { view: view, dispose: lifecycle.dispose } ;
+
+  function render() {
+    view.textContent = LocaleService.t("nav", "stats");
+  }
 }

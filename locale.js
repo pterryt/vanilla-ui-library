@@ -1,40 +1,21 @@
-export const locale = {
-  STRINGS: {
-    en: {
-      nav: {
-        gallery: "Gallery",
-        reader: "Reader",
-        table: "Table",
-        stats: "Statistics",
-        settings: "Settings",
-        theme: "Theme",
-        user: "User"
-      }
-    },
+import en from "@locales/en.json" with { type: "json" };
+import ja from "@locales/ja.json" with { type: "json" };
 
-    ja: {
-      nav: {
-        gallery: "ギャラリー",
-        reader: "リーダー",
-        table: "テーブル",
-        stats: "統計",
-        settings: "設定",
-        theme: "テーマ",
-        user: "ユーザー"
-      }
-    }
+export const LocaleService = {
+
+  STRINGS: { en, ja },
+
+  initialize(store) {
+    this.store = store;
   },
 
-  /**
-   * Function that, given a locale code, returns a function that handles
-   * getting localized strings.
-   * @param locale_code
-   * @returns {function(*, *): *}
-   */
-  get_locale(locale_code) {
-    return function l(string_group, string_key) {
-      return locale.STRINGS[locale_code]?.[string_group]?.[string_key] ?? string_key;
-    }
-  }
+  t(group, key) {
+    const locale = this.store.getState().locale;
 
+    return this.STRINGS[locale]?.[group]?.[key] ?? key;
+  },
+
+  set_locale(locale_code) {
+    this.store.setState( { locale: locale_code } )
+  }
 };

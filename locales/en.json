@@ -1,0 +1,13 @@
+{
+  "label": "English",
+  "nav": {
+    "gallery": "Gallery",
+    "home": "Home",
+    "reader": "Reader",
+    "table": "Table",
+    "stats": "Statistics",
+    "settings": "Settings",
+    "theme": "Theme",
+    "user": "User"
+  }
+}

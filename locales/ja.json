@@ -1,0 +1,13 @@
+{
+  "label": "日本語",
+  "nav": {
+    "gallery": "ギャラリー",
+    "home": "ホームページ",
+    "reader": "リーダー",
+    "table": "テーブル",
+    "stats": "統計",
+    "settings": "設定",
+    "theme": "テーマ",
+    "user": "ユーザー"
+  }
+}

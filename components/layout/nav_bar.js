@@ -1,6 +1,7 @@
 import {CDropdownMenu} from "@components/shared/dropdown_menu.js"
 import {ThemeService} from "@app/theme.js";
 import {Disposable} from "@app/disposable.js"
+import {LocaleService} from "@app/locale.js";
 
 import {
   create_home_button,
@@ -14,7 +15,6 @@ export function create_nav_bar(app_store) {
 
   const lifecycle = Disposable.create_disposable_scope();
   lifecycle.own(app_store.subscribe(s => s.locale, render_links))
-
   const nav = document.createElement('nav');
   nav.classList.add('c-nav-bar');
 
@@ -27,9 +27,8 @@ export function create_nav_bar(app_store) {
   };
 
   const containers = create_containers();
-  const links = create_links();
 
-  render_links(containers.center);
+  render_links();
   render_menu_buttons();
 
   return {
@@ -52,19 +51,22 @@ export function create_nav_bar(app_store) {
   }
 
   function create_links() {
-    return [{label: "Gallery", href: "#gallery"},
-      {label: "Reader", href: "#reader"}, {label: "Table", href: "#table"},
-      {label: "Statistics", href: "#statistics"}];
+    return [{label: LocaleService.t("nav", "gallery"), href: "#gallery"},
+      {label: LocaleService.t("nav", "reader"), href: "#reader"},
+      {label: LocaleService.t("nav", "table"), href: "#table"},
+      {label: LocaleService.t("nav", "stats"), href: "#statistics"}];
   }
 
-  function render_links(centerContainer) {
+  function render_links() {
+    containers.center.replaceChildren();
+    const links = create_links();
     for (const link of links) {
       const a = document.createElement('a');
       a.className = 'c-nav-bar-link';
       a.textContent = link.label;
       a.href = link.href;
 
-      centerContainer.appendChild(a);
+      containers.center.appendChild(a);
     }
   }
 
@@ -98,32 +100,34 @@ export function create_nav_bar(app_store) {
 
   function render_locale_button() {
     const locale_button = create_locale_button();
-    containers.right.appendChild(locale_button);
+    const dropdown_menu = new CDropdownMenu(locale_button);
+
+    for (const key of Object.keys(LocaleService.STRINGS)) {
+      dropdown_menu.add_menu_button(key, () => {
+        app_store.setState({locale: key})
+      });
+    }
+    containers.right.appendChild(dropdown_menu.element);
   }
 
   // TODO: Breakout
   function render_theme_button() {
     const theme_button = create_theme_button();
     const dropdown_menu = new CDropdownMenu(theme_button);
-    const default_button = document.createElement('button');
-    default_button.textContent = 'Default';
-    default_button.addEventListener('click', () => {
+
+    // Add Default Theme Dropdown Button
+    dropdown_menu.add_menu_button('Default', () => {
       app_store.setState({
         theme: ThemeService.THEME.DEFAULT,
       });
     });
 
-    dropdown_menu.add_menu_item(default_button);
-
-    const dark_button = document.createElement('button');
-    dark_button.textContent = 'Dark Mode';
-    dark_button.addEventListener('click', () => {
+    // Add Dark Theme Dropdown Button
+    dropdown_menu.add_menu_button('Dark Mode', () => {
       app_store.setState({
         theme: ThemeService.THEME.DARK,
       });
     });
-
-    dropdown_menu.add_menu_item(dark_button);
 
     containers.right.appendChild(dropdown_menu.element);
   }

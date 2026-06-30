@@ -10,8 +10,8 @@ export const Disposable = {
       },
 
       dispose() {
-        for (const dispose of disposables) {
-          dispose();
+        for (const d of disposables) {
+          d();
         }
       }
     };

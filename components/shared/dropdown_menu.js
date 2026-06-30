@@ -1,3 +1,4 @@
+
 export class CDropdownMenu {
   constructor(button, menu_items = []) {
 
@@ -20,6 +21,15 @@ export class CDropdownMenu {
   add_menu_item(item) {
     this.menu_items.push(item);
     this.dropdown.appendChild(item);
+  }
+
+  add_menu_button(label, onclick) {
+
+    const new_button = document.createElement('button');
+    new_button.textContent = label;
+    new_button.addEventListener('click', onclick);
+    this.add_menu_item(new_button);
+
   }
 
   toggle_dropdown() {
