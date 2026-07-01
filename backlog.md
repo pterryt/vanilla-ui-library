@@ -1,5 +1,4 @@
 # Backlog
-### APP005: Implement minimal logger
 ### APP006: Implement minimal tests
 ### APP007: Init minimal backend for dev env
 ### APP008: Init style guide
@@ -7,7 +6,7 @@
 
 ---
 # In Progress
-### APP004: Set up dev env for serving locally
+### APP005: Implement minimal logger
 
 
 ---
@@ -15,6 +14,7 @@
 ### APP001: Fix Project Structure
 ### APP002: Pub/Sub Re-Rendering Reactive System
 ### APP003: Replace Hardcoded Strings with Localized
+### APP004: Set up dev env for serving locally
 
 
 ---
