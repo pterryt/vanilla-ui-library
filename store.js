@@ -1,7 +1,15 @@
-import { Utility } from "@app/utility.js";
+import {Utility} from "@app/utility.js";
+import Logger from "@app/logger.js";
+
+const log = Logger.get("Store");
 
 export const Store = {
   createStore(initialState) {
+
+    log.debug("Creating store", {
+      initialKeys: Object.keys(initialState)
+    });
+
     let state = structuredClone(initialState);
 
     const subscriptions = [];
@@ -25,6 +33,10 @@ export const Store = {
           sub.callback(currentValue, previousValue);
         }
       }
+
+      log.trace("State updated", () => ({
+        previous: previousState, current: state
+      }));
     }
 
     function subscribe(selector, callback) {
