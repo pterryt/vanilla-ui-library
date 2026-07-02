@@ -6,7 +6,7 @@
 
 ---
 # In Progress
-### APP005: Implement minimal logger
+### APP010: Init jsdocs
 
 
 ---
@@ -15,6 +15,7 @@
 ### APP002: Pub/Sub Re-Rendering Reactive System
 ### APP003: Replace Hardcoded Strings with Localized
 ### APP004: Set up dev env for serving locally
+### APP005: Implement minimal logger
 
 
 ---
