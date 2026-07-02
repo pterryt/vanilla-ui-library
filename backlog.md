@@ -1,11 +1,10 @@
 # Backlog
-### APP007: Init minimal backend for dev env
-### APP008: Init style guide
 ### APP009: Make regular screen click hide menu for dropdowns
 
 ---
 # In Progress
-### APP006: Implement minimal tests
+### APP011: Made read.me
+### APP_012: Make architecture file
 
 ---
 # Complete
@@ -15,6 +14,9 @@
 ### APP004: Set up dev env for serving locally
 ### APP005: Implement minimal logger
 ### APP010: Init jsdocs
+### APP006: Implement minimal tests
+### APP007: Init minimal backend for dev env (duplicate)
+### APP008: Init style guide
 
 
 ---

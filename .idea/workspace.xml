@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4928e456-4d59-4d2c-8fb7-4fa4dc70674c" name="Changes" comment="refactor: fix paths and dir structure">
-      <change afterPath="$PROJECT_DIR$/tests/utility.test.js" afterDir="false" />
+    <list default="true" id="4928e456-4d59-4d2c-8fb7-4fa4dc70674c" name="Changes" comment="chore: add vitest jsdom">
+      <change afterPath="$PROJECT_DIR$/style-guide.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/backlog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000039650878" />
-      <entry key="MS500" value="1.0208764747320056" />
-      <entry key="S2" value="1.408170017523023" />
-      <entry key="S5" value="2.138775932620657" />
-      <entry key="S10" value="3.584786223656105" />
-      <entry key="S30" value="12.82455569606471" />
-      <entry key="S60" value="24.78620022602895" />
-      <entry key="M2" value="37.06620450911753" />
-      <entry key="M5" value="49.074541999219804" />
-      <entry key="M10" value="55.19977802334867" />
-      <entry key="M15" value="59.61754764816046" />
-      <entry key="M30" value="77.29421607325426" />
-      <entry key="H1" value="120.43048830286628" />
-      <entry key="H2" value="201.95666489336134" />
-      <entry key="H4" value="342.0193615604834" />
-      <entry key="D1" value="1537.1397716869878" />
-      <entry key="W1" value="3981.9216415482188" />
+      <entry key="MS100" value="1.000089982252032" />
+      <entry key="MS500" value="1.155693426956418" />
+      <entry key="S2" value="2.0310434818560914" />
+      <entry key="S5" value="4.208033199014524" />
+      <entry key="S10" value="6.647963646137311" />
+      <entry key="S30" value="9.713583802703655" />
+      <entry key="S60" value="10.794770756124349" />
+      <entry key="M2" value="11.595868028911894" />
+      <entry key="M5" value="12.812792150780085" />
+      <entry key="M10" value="13.662542234180393" />
+      <entry key="M15" value="14.041381687797589" />
+      <entry key="M30" value="14.483279174986576" />
+      <entry key="H1" value="14.739833859532112" />
+      <entry key="H2" value="16.245183686576958" />
+      <entry key="H4" value="42.39690341959268" />
+      <entry key="D1" value="1022.78103999238" />
+      <entry key="W1" value="3771.294038095061" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.8035489559622917E-66" />
-      <entry key="MS500" value="7.754282676611144E-14" />
-      <entry key="S2" value="5.276979502145268E-4" />
-      <entry key="S5" value="0.04886007878084618" />
-      <entry key="S10" value="0.22104316044801342" />
-      <entry key="S30" value="0.6046337153552311" />
-      <entry key="S60" value="0.7775819669689048" />
-      <entry key="M2" value="0.88180608240639" />
-      <entry key="M5" value="0.9509320950008059" />
-      <entry key="M10" value="0.9762275590971027" />
-      <entry key="M15" value="0.9976184064939811" />
-      <entry key="M30" value="1.1950381583668397" />
-      <entry key="H1" value="1.8858185073847291" />
-      <entry key="H2" value="3.817616430887017" />
-      <entry key="H4" value="8.577813187558569" />
-      <entry key="D1" value="48.22894225509478" />
-      <entry key="W1" value="112.24967616910267" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="1.1523819375141508E-270" />
+      <entry key="M2" value="1.0734905390892607E-135" />
+      <entry key="M5" value="1.0287730006665373E-54" />
+      <entry key="M10" value="1.0153975003317775E-27" />
+      <entry key="M15" value="1.024128544480899E-18" />
+      <entry key="M30" value="1.210812181472761E-9" />
+      <entry key="H1" value="6.002710490827652E-5" />
+      <entry key="H2" value="0.021538529201473807" />
+      <entry key="H4" value="0.6443004872635318" />
+      <entry key="D1" value="31.327546494066084" />
+      <entry key="W1" value="105.53981581387171" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0010911007207736526" />
-      <entry key="MS500" value="0.2558182016379843" />
-      <entry key="S2" value="0.8396586864770814" />
-      <entry key="S5" value="1.6680313805619142" />
-      <entry key="S10" value="3.3530526747165994" />
-      <entry key="S30" value="13.136325463771279" />
-      <entry key="S60" value="25.366458528285584" />
-      <entry key="M2" value="37.82641363382452" />
-      <entry key="M5" value="49.967778272936386" />
-      <entry key="M10" value="56.14487167010362" />
-      <entry key="M15" value="60.5933960685379" />
-      <entry key="M30" value="78.47603841437596" />
-      <entry key="H1" value="122.30660911196179" />
-      <entry key="H2" value="205.76622935907005" />
-      <entry key="H4" value="350.590136525572" />
-      <entry key="D1" value="1585.3618186183826" />
-      <entry key="W1" value="4094.1673355013313" />
+      <entry key="MS100" value="0.9202733711373102" />
+      <entry key="MS500" value="1.1376925549678896" />
+      <entry key="S2" value="2.0245860958777366" />
+      <entry key="S5" value="4.203817961846586" />
+      <entry key="S10" value="6.6449743790854585" />
+      <entry key="S30" value="9.712219059182743" />
+      <entry key="S60" value="10.794022976243962" />
+      <entry key="M2" value="11.59546821687299" />
+      <entry key="M5" value="12.81261472763145" />
+      <entry key="M10" value="13.662447191390294" />
+      <entry key="M15" value="14.041316428622126" />
+      <entry key="M30" value="14.48324543616225" />
+      <entry key="H1" value="14.739876391751066" />
+      <entry key="H2" value="16.266668016155457" />
+      <entry key="H4" value="43.04067053494677" />
+      <entry key="D1" value="1054.1041065260779" />
+      <entry key="W1" value="3876.830109571422" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -260,7 +256,7 @@
       <workItem from="1782852464303" duration="1805000" />
       <workItem from="1782854306522" duration="6262000" />
       <workItem from="1782865170930" duration="4742000" />
-      <workItem from="1782893563283" duration="14990000" />
+      <workItem from="1782893563283" duration="24282000" />
     </task>
     <task id="LOCAL-00001" summary="refactor style">
       <option name="closed" value="true" />
@@ -406,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782954662068</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="chore: add vitest jsdom">
+      <option name="closed" value="true" />
+      <created>1782970034913</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1782970034913</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,6 +443,7 @@
     <MESSAGE value="chore: add logger" />
     <MESSAGE value="chore: update backlog" />
     <MESSAGE value="refactor: fix paths and dir structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix paths and dir structure" />
+    <MESSAGE value="chore: add vitest jsdom" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add vitest jsdom" />
   </component>
 </project>
