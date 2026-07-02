@@ -2,10 +2,13 @@
   "name": "vanilla-ui-library",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "docs": "jsdoc src -r -d docs/api",
+    "dev": "vite",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:run": "vitest run"
   },
   "private": true,
   "repository": {
@@ -20,6 +23,9 @@
   },
   "homepage": "https://github.com/pterryt/vanilla-ui-library#readme",
   "devDependencies": {
-    "vite": "^8.1.2"
+    "jsdoc": "^4.0.5",
+    "jsdom": "^29.1.1",
+    "vite": "^8.1.2",
+    "vitest": "^4.1.9"
   }
 }

@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4928e456-4d59-4d2c-8fb7-4fa4dc70674c" name="Changes" comment="chore: update backlog">
+    <list default="true" id="4928e456-4d59-4d2c-8fb7-4fa4dc70674c" name="Changes" comment="refactor: fix paths and dir structure">
+      <change afterPath="$PROJECT_DIR$/tests/utility.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/nav_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/nav_bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/nav_bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/nav_bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/reader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/reader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/statistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/dropdown_menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/dropdown_menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/dropdown_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/dropdown_menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/menu_icon_button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/menu_icon_button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/menu_icon_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/menu_icon_button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disposable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/disposable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/backlog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,61 +56,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000873" />
-      <entry key="MS500" value="1.0024449149583086" />
-      <entry key="S2" value="1.2223647483857965" />
-      <entry key="S5" value="1.548087265185678" />
-      <entry key="S10" value="1.7499513349251534" />
-      <entry key="S30" value="2.4740547054564654" />
-      <entry key="S60" value="3.6292167727644116" />
-      <entry key="M2" value="5.069445634721818" />
-      <entry key="M5" value="9.618862003265349" />
-      <entry key="M10" value="19.717176692415617" />
-      <entry key="M15" value="30.411563800415088" />
-      <entry key="M30" value="60.45537825196342" />
-      <entry key="H1" value="109.0453505578542" />
-      <entry key="H2" value="188.59566346390852" />
-      <entry key="H4" value="323.07479259372377" />
-      <entry key="D1" value="1507.897833505607" />
-      <entry key="W1" value="3924.695643660698" />
+      <entry key="MS100" value="1.0000000039650878" />
+      <entry key="MS500" value="1.0208764747320056" />
+      <entry key="S2" value="1.408170017523023" />
+      <entry key="S5" value="2.138775932620657" />
+      <entry key="S10" value="3.584786223656105" />
+      <entry key="S30" value="12.82455569606471" />
+      <entry key="S60" value="24.78620022602895" />
+      <entry key="M2" value="37.06620450911753" />
+      <entry key="M5" value="49.074541999219804" />
+      <entry key="M10" value="55.19977802334867" />
+      <entry key="M15" value="59.61754764816046" />
+      <entry key="M30" value="77.29421607325426" />
+      <entry key="H1" value="120.43048830286628" />
+      <entry key="H2" value="201.95666489336134" />
+      <entry key="H4" value="342.0193615604834" />
+      <entry key="D1" value="1537.1397716869878" />
+      <entry key="W1" value="3981.9216415482188" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="6.69738784957105E-153" />
-      <entry key="S10" value="8.18375699148689E-77" />
-      <entry key="S30" value="4.3416109940816696E-26" />
-      <entry key="S60" value="2.0836566049414154E-13" />
-      <entry key="M2" value="4.571976310537189E-7" />
-      <entry key="M5" value="0.00323286838427606" />
-      <entry key="M10" value="0.07922531447405447" />
-      <entry key="M15" value="0.2511993135018628" />
-      <entry key="M30" value="0.8539531177650962" />
-      <entry key="H1" value="1.8236643003725554" />
-      <entry key="H2" value="4.036280827134642" />
-      <entry key="H4" value="9.067599915244699" />
-      <entry key="D1" value="48.662142749390256" />
-      <entry key="W1" value="111.725765523464" />
+      <entry key="MS100" value="2.8035489559622917E-66" />
+      <entry key="MS500" value="7.754282676611144E-14" />
+      <entry key="S2" value="5.276979502145268E-4" />
+      <entry key="S5" value="0.04886007878084618" />
+      <entry key="S10" value="0.22104316044801342" />
+      <entry key="S30" value="0.6046337153552311" />
+      <entry key="S60" value="0.7775819669689048" />
+      <entry key="M2" value="0.88180608240639" />
+      <entry key="M5" value="0.9509320950008059" />
+      <entry key="M10" value="0.9762275590971027" />
+      <entry key="M15" value="0.9976184064939811" />
+      <entry key="M30" value="1.1950381583668397" />
+      <entry key="H1" value="1.8858185073847291" />
+      <entry key="H2" value="3.817616430887017" />
+      <entry key="H4" value="8.577813187558569" />
+      <entry key="D1" value="48.22894225509478" />
+      <entry key="W1" value="112.24967616910267" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.4383028606580455" />
-      <entry key="MS500" value="0.8498676819209448" />
-      <entry key="S2" value="1.1696750706114263" />
-      <entry key="S5" value="1.5194045675451067" />
-      <entry key="S10" value="1.7331107239729522" />
-      <entry key="S30" value="2.462261368111414" />
-      <entry key="S60" value="3.617369133441872" />
-      <entry key="M2" value="5.059532579420765" />
-      <entry key="M5" value="9.615248672307768" />
-      <entry key="M10" value="19.789515814210127" />
-      <entry key="M15" value="30.65478784896977" />
-      <entry key="M30" value="61.30033020924166" />
-      <entry key="H1" value="110.86078400682665" />
-      <entry key="H2" value="192.62454923991166" />
-      <entry key="H4" value="332.13571358308087" />
-      <entry key="D1" value="1556.5531237332202" />
-      <entry key="W1" value="4036.4174450698024" />
+      <entry key="MS100" value="0.0010911007207736526" />
+      <entry key="MS500" value="0.2558182016379843" />
+      <entry key="S2" value="0.8396586864770814" />
+      <entry key="S5" value="1.6680313805619142" />
+      <entry key="S10" value="3.3530526747165994" />
+      <entry key="S30" value="13.136325463771279" />
+      <entry key="S60" value="25.366458528285584" />
+      <entry key="M2" value="37.82641363382452" />
+      <entry key="M5" value="49.967778272936386" />
+      <entry key="M10" value="56.14487167010362" />
+      <entry key="M15" value="60.5933960685379" />
+      <entry key="M30" value="78.47603841437596" />
+      <entry key="H1" value="122.30660911196179" />
+      <entry key="H2" value="205.76622935907005" />
+      <entry key="H4" value="350.590136525572" />
+      <entry key="D1" value="1585.3618186183826" />
+      <entry key="W1" value="4094.1673355013313" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -167,6 +144,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ToolWindow.TODO.ShowToolbar": "false",
+    "Vitest.Utility.shallowEqual.returns false for primitive values.executor": "Run",
+    "Vitest.Utility.shallowEqual.returns true when nested object references are identical.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "full.screen.before.presentation.mode": "false",
@@ -198,7 +177,35 @@
       <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Vitest.Utility.shallowEqual.returns false for primitive values">
+    <configuration name="Utility.shallowEqual.returns false for primitive values" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/utility.test.js" />
+      <test-names>
+        <test-name value="Utility.shallowEqual" />
+        <test-name value="returns false for primitive values" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Utility.shallowEqual.returns true when nested object references are identical" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/utility.test.js" />
+      <test-names>
+        <test-name value="Utility.shallowEqual" />
+        <test-name value="returns true when nested object references are identical" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -209,6 +216,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Vitest.Utility.shallowEqual.returns false for primitive values" />
+      <item itemvalue="Vitest.Utility.shallowEqual.returns true when nested object references are identical" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Vitest.Utility.shallowEqual.returns false for primitive values" />
+        <item itemvalue="Vitest.Utility.shallowEqual.returns true when nested object references are identical" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -242,7 +260,7 @@
       <workItem from="1782852464303" duration="1805000" />
       <workItem from="1782854306522" duration="6262000" />
       <workItem from="1782865170930" duration="4742000" />
-      <workItem from="1782893563283" duration="9362000" />
+      <workItem from="1782893563283" duration="14990000" />
     </task>
     <task id="LOCAL-00001" summary="refactor style">
       <option name="closed" value="true" />
@@ -380,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782953084855</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="refactor: fix paths and dir structure">
+      <option name="closed" value="true" />
+      <created>1782954662068</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1782954662068</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,6 +438,7 @@
     <MESSAGE value="build: set up vite" />
     <MESSAGE value="chore: add logger" />
     <MESSAGE value="chore: update backlog" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update backlog" />
+    <MESSAGE value="refactor: fix paths and dir structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix paths and dir structure" />
   </component>
 </project>

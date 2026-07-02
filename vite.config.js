@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import {defineConfig} from "vite";
 import path from "path";
 
 export default defineConfig({
@@ -10,8 +10,9 @@ export default defineConfig({
       "@locales": path.resolve(__dirname, "./locales"),
       "@assets": path.resolve(__dirname, "./assets")
     }
-  },
-  server: {
+  }, server: {
     open: "/main.html"
+  }, test: {
+    environment: "jsdom", globals: true,
   }
 });
