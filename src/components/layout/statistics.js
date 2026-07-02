@@ -1,7 +1,7 @@
-import {LocaleService} from "@app/locale.js";
-import {Disposable} from "@app/disposable.js";
+import {LocaleService} from "@app/src/locale.js";
+import {Disposable} from "@app/src/disposable.js";
 
-export function home_view(app_context) {
+export function statistics_view(app_context) {
 
   const app_store =  app_context.store;
   const lifecycle = Disposable.create_disposable_scope();
@@ -16,6 +16,6 @@ export function home_view(app_context) {
   return { view: view, dispose: lifecycle.dispose } ;
 
   function render() {
-    view.textContent = LocaleService.t("nav", "home");
+    view.textContent = LocaleService.t("nav", "stats");
   }
 }

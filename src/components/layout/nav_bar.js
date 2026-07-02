@@ -1,7 +1,7 @@
-import {CDropdownMenu} from "@components/shared/dropdown_menu.js"
-import {ThemeService} from "@app/theme.js";
-import {Disposable} from "@app/disposable.js"
-import {LocaleService} from "@app/locale.js";
+import {CDropdownMenu} from "@app/src/components/shared/dropdown_menu.js"
+import {ThemeService} from "@app/src/theme.js";
+import {Disposable} from "@app/src/disposable.js"
+import {LocaleService} from "@app/src/locale.js";
 
 import {
   create_home_button,

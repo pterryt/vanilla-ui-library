@@ -1,9 +1,9 @@
 import {create_nav_bar} from "@layout/nav_bar.js";
-import {Router} from "@app/router.js";
-import {Store} from "@app/store.js";
-import {ThemeService} from "@app/theme.js";
-import {LocaleService} from "@app/locale.js";
-import Logger from "@app/logger.js"
+import {Router} from "@app/src/router.js";
+import {Store} from "@app/src/store.js";
+import {ThemeService} from "@app/src/theme.js";
+import {LocaleService} from "@app/src/locale.js";
+import Logger from "@app/src/logger.js"
 
 Logger.level = Logger.LEVELS.TRACE;
 

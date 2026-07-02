@@ -4,6 +4,9 @@ import {reader_view} from "@layout/reader.js";
 import {table_view} from "@layout/table.js";
 import {statistics_view} from "@layout/statistics.js";
 import {settings_view} from "@layout/settings.js";
+import Logger from "@app/src/logger.js";
+
+const log = Logger.get("Router");
 
 export class Router {
   constructor(view_root, app_context) {

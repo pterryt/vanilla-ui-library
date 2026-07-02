@@ -1,5 +1,5 @@
-import {LocaleService} from "@app/locale.js";
-import {Disposable} from "@app/disposable.js";
+import {LocaleService} from "@app/src/locale.js";
+import {Disposable} from "@app/src/disposable.js";
 
 export function table_view(app_context) {
 
